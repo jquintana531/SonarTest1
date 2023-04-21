@@ -1,0 +1,84 @@
+syntax = "proto3";
+
+import "google/protobuf/any.proto";
+import "google/protobuf/struct.proto";
+
+option csharp_namespace = "MTCenter.GRPC.GDBBO.DBProtos";
+
+
+service DBData{
+	rpc GetData (DataRequestModel) returns (DataRequestReply);
+}
+
+message DataRequestModel{
+	string procedure_name = 1;
+	TransactionDb transaction_db = 2;
+	repeated InputParameter input_parameter = 3;
+}
+
+
+message InputParameter{
+	string field_name = 4;
+	SqlDbType field_type = 5;
+	google.protobuf.Value value = 6;
+	int32 field_length = 7;
+	string field_out = 8;
+	string field_return = 9;
+	ParameterDirection field_direction = 10;
+}
+
+enum SqlDbType {
+    BigInt = 0;
+    Binary = 1;
+    Bit = 2;
+    Char = 3;
+    DateTime = 4;
+    Decimal = 5;
+    Float = 6;
+    Image = 7;
+    Int = 8;
+    Money = 9;
+    NChar = 10;
+    NText = 11;
+    NVarChar = 12;
+    Real = 13;
+    UniqueIdentifier = 14;
+    SmallDateTime = 15;
+    SmallInt = 16;
+    SmallMoney = 17;
+    Text = 18;
+    Timestamp = 19;
+    TinyInt = 20;
+    VarBinary = 21;
+    VarChar = 22;
+    Variant = 23;
+    Xml = 25;
+    Udt = 29;
+    Structured = 30;
+    Date = 31;
+    Time = 32;
+    DateTime2 = 33;
+    DateTimeOffset = 34;
+}
+
+enum ParameterDirection {
+    Input = 0;
+    Output = 2;
+    InputOutput = 3;
+    ReturnValue = 6;
+}
+
+enum TransactionDb {
+    SELECT = 0;
+    UPDATE = 1;
+    INSERT = 2;
+}
+
+message DataRequestReply{
+	bytes data  = 11;
+	int32 codigo_respuesta = 12;
+	string mensaje_respuesta = 13;
+}
+
+
+
