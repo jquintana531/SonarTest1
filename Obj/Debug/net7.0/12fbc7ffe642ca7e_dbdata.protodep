@@ -1,0 +1,4 @@
+obj\Debug\net7.0\Protos/Dbdata.cs \
+obj\Debug\net7.0\Protos/DbdataGrpc.cs: C:/Users/TecnologiaMTC/.nuget/packages/grpc.tools/2.50.0/build/native/include/google/protobuf/any.proto\
+ C:/Users/TecnologiaMTC/.nuget/packages/grpc.tools/2.50.0/build/native/include/google/protobuf/struct.proto\
+ Protos/dbdata.proto

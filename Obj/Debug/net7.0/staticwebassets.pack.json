@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\TecnologiaMTC\\Documents\\MTCenter\\Repos\\MTC.WebApp.BackOffice\\MTC.WebApp.BackOffice\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MTC.WebApp.BackOffice.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.MTC.WebApp.BackOffice.props",
+      "PackagePath": "build\\MTC.WebApp.BackOffice.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.MTC.WebApp.BackOffice.props",
+      "PackagePath": "buildMultiTargeting\\MTC.WebApp.BackOffice.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.MTC.WebApp.BackOffice.props",
+      "PackagePath": "buildTransitive\\MTC.WebApp.BackOffice.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
